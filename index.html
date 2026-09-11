@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>once — a private poker ledger for home games</title>
+<meta name="description" content="once tracks buy-ins, cash-outs and settlements for a private home poker game. It keeps the books. It never touches the money.">
+<style>
+  :root {
+    --ink: #14231d;
+    --ink-soft: #4a5a52;
+    --felt: #1f6f4a;
+    --felt-deep: #10291f;
+    --rule: #e2e5e1;
+    --paper: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding: 5rem 1.5rem 4rem; }
+
+  .mark {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    margin: 0;
+  }
+  .mark span {
+    display: inline-block;
+    width: 0.4em; height: 0.4em;
+    border-radius: 50%;
+    background: var(--felt);
+    margin-left: 0.14em;
+    vertical-align: 0.08em;
+  }
+  .tag {
+    margin: 1.5rem 0 0;
+    font-size: 1.3rem;
+    line-height: 1.45;
+    letter-spacing: -0.01em;
+    max-width: 26rem;
+  }
+  .sub { margin: 1.25rem 0 0; color: var(--ink-soft); max-width: 30rem; }
+
+  .card {
+    margin: 3.5rem 0 0;
+    background: var(--felt-deep);
+    color: #eaf1ec;
+    border-radius: 14px;
+    padding: 1.75rem 1.75rem 1.5rem;
+  }
+  .card h2 {
+    margin: 0 0 1rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #8fb8a1;
+  }
+  .card ul { margin: 0; padding: 0; list-style: none; }
+  .card li {
+    padding: 0.55rem 0;
+    border-top: 1px solid rgba(255,255,255,0.09);
+    font-size: 1rem;
+  }
+  .card li:first-child { border-top: 0; padding-top: 0; }
+
+  h3 {
+    margin: 3rem 0 0.5rem;
+    font-size: 1.05rem;
+    font-weight: 650;
+  }
+  p { margin: 0.65rem 0; }
+  .note {
+    margin: 1rem 0 0;
+    padding: 0.9rem 1.1rem;
+    background: #f4f7f5;
+    border-left: 3px solid var(--felt);
+    font-size: 0.95rem;
+  }
+  a { color: var(--felt); text-decoration: underline; text-underline-offset: 0.15em; }
+  a:focus-visible { outline: 2px solid var(--felt); outline-offset: 3px; }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.25rem;
+  }
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    .wrap { padding: 3rem 1.25rem 3rem; }
+    .mark { font-size: 2.75rem; }
+    .tag { font-size: 1.15rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1 class="mark">once<span></span></h1>
+
+  <p class="tag">A private ledger for a home poker game.</p>
+  <p class="sub">once keeps the books for your table: who bought in, who added on, who cashed out, and who owes whom when the night ends.</p>
+
+  <div class="card">
+    <h2>what it tracks</h2>
+    <ul>
+      <li>Buy-ins, add-ons and cash-outs, logged as they happen</li>
+      <li>Settlements worked out at the end, so nobody does mental arithmetic at 2am</li>
+      <li>A running history and leaderboard across every session</li>
+      <li>A feed and group chat for the table talk between games</li>
+    </ul>
+  </div>
+
+  <h3>it does not handle money</h3>
+  <p>once is a record, not a payment app. It never processes, holds or moves funds. It works out what players already agreed between themselves, and players settle up directly in whichever payment app they use.</p>
+
+  <h3>who it is for</h3>
+  <p>Anyone who hosts or plays in a regular home game. Sign in, start a session, share the code with your table, and once keeps the ledger. Your games and history are visible only to the players in them.</p>
+
+  <div class="note">
+    For adults aged 18 and over.
+  </div>
+
+  <h3>get the app</h3>
+  <p>once is coming to the App Store for iPhone.</p>
+
+  <h3>get in touch</h3>
+  <p>Questions, or a request about your data: <a href="mailto:help@oncepoker.app">help@oncepoker.app</a></p>
+
+  <footer>
+    <span>once</span>
+    <a href="https://privacy.oncepoker.app">Privacy policy</a>
+    <a href="mailto:help@oncepoker.app">help@oncepoker.app</a>
+  </footer>
+
+</div>
+</body>
+</html>
